@@ -5,11 +5,10 @@ const speed = document.querySelector(".speed");
 
 let value = 0;
 let rotate = 0;
-console.log(click);
 const clickF = (e) => {
   if (rotate < 178) {
     value += 1;
-    rotate += 1;
+    rotate += 3;
     number.innerHTML = `${value}`;
     arrow.style.transform = `rotate3d(0, 0, 1, ${rotate}deg)`;
   }
